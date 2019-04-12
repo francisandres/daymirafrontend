@@ -1,0 +1,20 @@
+
+<div class="container shadow p-3 mb-5 bg-white " style="margin-top: 10px">
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for >Nome</label>
+        <input type="text" id="primeironome" name="nome" class="form-control formulario" [(ngModel)] = "categoria.nome" placeholder="Nome" >
+      </div>
+      <div class="form-group col-md-6">
+        <label >Descrição</label>
+        <input type="text" class="form-control formulario" id="ultimonome" name="descricao" [(ngModel)] = "categoria.descricao"  placeholder="Descrição">
+      </div>
+    </div>
+
+    <div class="container">
+      <button type="button" (click)="salvar()" class="btn btn-primary">Salvar</button>
+      <button type="button" class="btn btn-danger" style="margin-left: 4px">Cancelar</button>
+    </div>
+    </form>
+  </div>
